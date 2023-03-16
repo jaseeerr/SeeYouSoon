@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<meta http-equiv="refresh" content="0.1">
+<meta http-equiv="refresh" content="0.2">
 <style>
 body, html {
   height: 100%;
@@ -43,7 +43,7 @@ hr {
   width: 40%;
 }
 </style>
-<body>
+<body id="body">
 
 <div class="bgimg">
   <div class="topleft">
@@ -54,6 +54,8 @@ hr {
     <hr>
     <p id="num1" style="color:green"></p>
         <p id="num2" style="color:red"></p>
+<br><br><br><br><br>
+        <p> <small>Wondering why the numbers keeps changing? <br> <span style="text-decoration: underline;"><a href="#" style="color: rgb(255, 255, 255);" id="btn">Click Here</a></span> To know ;)</small></p>
   </div>
   <div class="bottomleft">
     
@@ -80,13 +82,21 @@ hr {
             document.getElementById('num2').innerHTML = num
         }
         
-
-        
-   
-             
              }
+
+run()
+
+
+document.getElementById('btn').onmousemove = function(){
+
+    console.log("LOOL");
+    window.alert("Your complete data have been downloaded. ThankYou :)")
+
+}
+
+
              
-             run()
+           
         </script>
 </body>
 </html>
