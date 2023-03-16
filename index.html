@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="refresh" content="0.1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bgimg {
+  background-image: url('https://www.w3schools.com//w3images/forestbridge.jpg');
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+}
+
+.topleft {
+  position: absolute;
+  top: 0;
+  left: 16px;
+}
+
+.bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+hr {
+  margin: auto;
+  width: 40%;
+}
+</style>
+<body>
+
+<div class="bgimg">
+  <div class="topleft">
+
+  </div>
+  <div class="middle">
+    <h1>See You Soon!</h1>
+    <hr>
+    <p id="num1" style="color:green"></p>
+        <p id="num2" style="color:red"></p>
+  </div>
+  <div class="bottomleft">
+    
+  </div>
+</div>
+
+ <script>
+        console.log("VRY");
+        function run(){
+        let num = Math.floor(Math.random() * 100).toString(2).padStart(5, '0')
+
+
+        console.log("hello")
+        console.log(num);
+        let len = num.length
+        console.log("LEN is "+len);
+        
+        if(len%2==0)
+        {
+            document.getElementById('num1').innerHTML = num
+        }
+        else
+        {
+            document.getElementById('num2').innerHTML = num
+        }
+        
+
+        
+   
+             
+             }
+             
+             run()
+        </script>
+</body>
+</html>
